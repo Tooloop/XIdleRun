@@ -13,7 +13,7 @@ You need these packets installed
 | libxext-dev | X11 miscellaneous extensions library (development headers) |
 | libxss-dev  | X11 Screen Saver extension library (development headers)   |
 
-On Ubuntu this line will do so:
+On Ubuntu this line will do:
 
     sudo apt install libx11-dev libxext-dev libxss-dev
 
@@ -26,13 +26,13 @@ Then compile it like so:
 
     xidlerun [-t seconds] [-c command]
 
-**-t** Time in seconds, default is 60.
-**-c** Command to run.
+**-t** Time in seconds, default is 60  
+**-c** Command to run
 
 Examples:
 
-    xidlerun 60 "echo One minute"
-    xidlerun 3600 "/bin/bash ~/myscript.sh"
+    xidlerun -c "echo One minute"
+    xidlerun -t 3600 -c "/bin/bash ~/myscript.sh"
 
 
 ## Credits
