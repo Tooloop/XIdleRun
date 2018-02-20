@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
         }
 
         if (idleTime < secondsToReset && didReset) {
-            printf("User interaction detectd, resetting time.\n");
+            printf("User interaction detected, resetting time.\n");
             didReset = false;
         }
 
